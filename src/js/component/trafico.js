@@ -31,29 +31,23 @@ export function Trafico() {
 							className={
 								"mt-3 card-body border border-success rounded-circle " +
 								colorLuz1
-							}></div>
+							}
+							onClick={cambioVerde}></div>
 						<div
 							className={
 								"mt-3 card-body border border-warning rounded-circle " +
 								colorLuz2
-							}></div>
+							}
+							onClick={cambioAmarillo}></div>
 						<div
 							className={
 								"my-3 card-body border border-danger rounded-circle " +
 								colorLuz3
-							}></div>
+							}
+							onClick={cambioRojo}></div>
 					</div>
 				</div>
 			</div>
-			<button className="btn btn-success" onClick={cambioVerde}>
-				Luz Verde
-			</button>
-			<button className="btn btn-warning" onClick={cambioAmarillo}>
-				Luz Amarilla
-			</button>
-			<button className="btn btn-danger" onClick={cambioRojo}>
-				Luz Roja
-			</button>
 		</div>
 	);
 }
